@@ -1,39 +1,94 @@
-# Algerian_forest_fires_dataset
-Algerian Forest Fires Dataset Analysis
-This project focuses on analyzing the Algerian Forest Fires dataset, which includes meteorological and fire-related data from two regions in Algeria (Setif and Bejaia). The main goal is to understand the patterns behind forest fires and help predict fire risk using machine learning models.
+# 🔥 Algerian Forest Fires Analysis
 
-📁 Dataset
-Source: UCI Machine Learning Repository
+## 📌 Project Overview
 
-Regions: Bejaia and Sidi-Bel Abbes
+This project explores the Algerian Forest Fires Dataset to understand how weather conditions and fire weather indices relate to wildfire occurrence.
 
-Features: Includes weather data like temperature, relative humidity (RH), wind speed, rain, and fire indexes such as FFMC, DMC, DC, ISI, BUI, and FWI.
+The analysis includes:
 
-Target: Classes (fire or not fire)
+* Data Cleaning
+* Missing Value Handling
+* Data Type Conversion
+* Exploratory Data Analysis (EDA)
+* Regional Analysis
+* Fire Risk Indicator Investigation
 
-🔍 What This Notebook Does
-Loads and cleans the dataset
+---
 
-Explores the data with visualizations
+## 📊 Dataset Information
 
-Checks correlation between features
+The dataset contains meteorological observations collected from two regions in Algeria.
 
-Applies feature scaling
+Features include:
 
-Trains and tests regression models
+* Temperature
+* Relative Humidity (RH)
+* Wind Speed (Ws)
+* Rainfall
+* FFMC (Fine Fuel Moisture Code)
+* DMC (Duff Moisture Code)
+* DC (Drought Code)
+* ISI (Initial Spread Index)
+* BUI (Build Up Index)
+* FWI (Fire Weather Index)
 
-Evaluates model performance (MAE, MSE, R²)
+Target Variable:
 
-📊 Libraries Used
-pandas
+* Classes (Fire / Not Fire)
 
-numpy
+---
 
-matplotlib
+## 🛠 Technologies Used
 
-seaborn
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
-scikit-learn
+---
 
-📌 Goal
-To build a simple and effective machine learning pipeline that helps predict the Fire Weather Index (FWI) based on weather conditions.
+## 🔍 Data Cleaning Steps
+
+The following preprocessing tasks were performed:
+
+* Removed invalid records
+* Handled missing values
+* Reset indices
+* Converted numerical columns to proper data types
+* Standardized column names
+* Added regional identifiers
+
+---
+
+## 📈 Key Insights
+
+* Higher temperatures tend to be associated with increased fire activity.
+* Low rainfall periods show elevated fire risk.
+* Fire Weather Index (FWI) is strongly related to fire occurrence.
+* Regional differences can be observed in weather patterns and fire behavior.
+
+---
+
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/USERNAME/algerian-forest-fires-analysis.git
+
+cd algerian-forest-fires-analysis
+
+pip install -r requirements.txt
+
+jupyter notebook
+```
+
+---
+
+## 🎯 Future Improvements
+
+* Fire Prediction Models
+* Logistic Regression
+* Random Forest Classification
+* Feature Importance Analysis
+* Wildfire Risk Prediction Dashboard
